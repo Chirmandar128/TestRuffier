@@ -18,7 +18,7 @@ main_layout.addWidget(button,alignment=Qt.AlignCenter)
 
 
 
-def prueba()
+def prueba():
     winner.setText(str(randint(0,100)))
     text.setText('Ganador:')
 
