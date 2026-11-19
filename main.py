@@ -12,14 +12,15 @@ winner = QLabel('¿?')
 button = QPushButton('generar')
 
 main_layout = QVBoxLayout()
-main_layout.addWidget(text)
-main_layout.addWidget(winner)
-main_layout.addWidget(button)
+main_layout.addWidget(text, alignment=Qt.AlignCenter)
+main_layout.addWidget(winner,alignment=Qt.AlignCenter)
+main_layout.addWidget(button,alignment=Qt.AlignCenter)
 
 
 
 def prueba()
     winner.setText(str(randint(0,100)))
+    text.setText('Ganador:')
 
 button.clicked.connect(prueba)
 
