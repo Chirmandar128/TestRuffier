@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLa
 app = QApplication([])
 
 main_win = QWidget()
+main_win.setWindowTitle('Determinante ganador')
 button = QPushButton('hola')
 button2 = QPushButton('hola')
 button3 = QPushButton('hola')
