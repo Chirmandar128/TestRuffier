@@ -19,7 +19,7 @@ main_layout.addWidget(button)
 
 
 def prueba()
-    winner.setText(randint(0,100))
+    winner.setText(str(randint(0,100)))
 
 button.clicked.connect(prueba)
 
