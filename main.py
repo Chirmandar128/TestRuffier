@@ -5,16 +5,16 @@ app = QApplication([])
 
 main_win = QWidget()
 main_win.setWindowTitle('Determinante ganador')
-button = QPushButton('hola')
-button2 = QPushButton('hola')
-button3 = QPushButton('hola')
-button4 = QPushButton('hola')
+main_win.resize(300,150)
+text = QLabel('Click para descubrir el ganador')
+winner = QLabel('¿?')
+button = QPushButton('generar')
 
 main_layout = QVBoxLayout()
+main_layout.addWidget(text)
+main_layout.addWidget(winner)
 main_layout.addWidget(button)
-main_layout.addWidget(button2)
-main_layout.addWidget(button3)
-main_layout.addWidget(button4)
+
 
 main_win.setLayout(main_layout)
 main_win.show()
